@@ -1,0 +1,74 @@
+/* Ensure your .chat-container has a fixed maximum height and is scrollable */
+.fixed-input-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    width: 100% !important;
+}
+
+/* Group mic and text input together */
+.fixed-input-container > .stButton, 
+.fixed-input-container > .stTextInput {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between mic and input */
+}
+
+/* Chat container to occupy its own space below input controls */
+.chat-container {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px; /* Space between input and chat */
+    max-width: 600px !important;
+    align-items: flex-start !important;
+}
+
+/* You might need to adjust other styles to ensure they work well with these */
+.chat-row {
+    display: flex !important;
+    margin: 5px;
+    width: 100%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.chat-bubble {
+    font-family: "Source Sans Pro", sans-serif, "Segoe UI", "Roboto", sans-serif;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    margin: 0px 7px;
+    max-width: 70%;
+}
+
+.ai-bubble {
+    /* background: rgb(124, 175, 177); */
+    background: linear-gradient(135deg, rgb(116, 123, 126) 0%, rgb(116, 123, 126) 100%); 
+    color: white;
+    border-radius: 10px;
+}
+
+.human-bubble {
+    background: linear-gradient(135deg, rgb(0, 178, 255) 0%, rgb(0, 106, 255) 100%); 
+    color: white;
+    border-radius: 20px;
+}
+
+.chat-icon {
+    border-radius: 5px;
+}
+
+/* Add to your style.css file */
+.voice-icon {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.voice-icon:hover {
+    color: #007bff;
+}
+

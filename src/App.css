@@ -1,0 +1,57 @@
+.dark-theme {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.theme-toggle button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.theme-toggle button:hover {
+    background-color: #555;
+}
+
+/* Chat box styles for dark and light theme */
+.dark-theme .chat-container {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+.light-theme .chat-container {
+    background-color: #F5F5F7;
+    color: #000;
+}
+
+.dark-theme .inputForm form .mic-button{
+    color: #000;
+}
+
+.dark-theme .chat-bubble.bot{
+    background-color: #3b4b5e;
+    color: white;
+}
+
+.dark-theme .chat-bubble.human{
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.app-content .App-header{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #0D518E;
+}
